@@ -6,7 +6,7 @@ fn divisors(integer: u32) -> Result<Vec<u32>, String> {
             }
         }
         match arr.len() {
-           0 => Result::Err(format!("{} is prime", integer)),
-           _ => Result::Ok(arr)
+           0 => Err(format!("{} is prime", integer)),
+           _ => Ok(arr)
         }
 }
