@@ -12,7 +12,3 @@ fn outlier(values: &[i32]) -> i32 {
 
     *val.unwrap()
 }
-
-fn main() {
-    print!("{}", outlier(&[1, 3, 5, 7, 4]));
-}
